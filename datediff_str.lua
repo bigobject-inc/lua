@@ -17,13 +17,15 @@ function datediff_str(d, datestring1,...)
 	
 	local arg={...}
 	if arg[1] ~= nil then
-		if arg[1] == "min" then
+		if arg[1] == "\"min\"" then
 			return math.abs((str_date - col_date) / 60)
-		elseif arg[1] == "hour" then
+		elseif arg[1] == "\"hour\"" then
 			return math.abs((str_date - col_date) / 3600)
-		elseif arg[1] == "day" then
+		elseif arg[1] == "\"day\"" then
 			return math.abs((str_date - col_date) / 86400)
 		end
 	end
 	return math.abs(str_date - col_date)
+
+	--return 0
 end
