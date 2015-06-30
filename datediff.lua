@@ -5,13 +5,14 @@ function datediff(d1, d2, ...)
 
 	local arg={...}
 	if arg[1] ~= nil then
-		if arg[1] == "min" then
+		if arg[1] == "\"min\"" then
 			return math.abs((col_date1 - col_date2) / 60)
-		elseif arg[1] == "hour" then
+		elseif arg[1] == "\"hour\"" then
 			return math.abs((col_date1 - col_date2) / 3600)
-		elseif arg[1] == "day" then
+		elseif arg[1] == "\"day\"" then
 			return math.abs((col_date1 - col_date2) / 86400)
 		end
 	end
 	return math.abs(col_date1 - col_date2)
+	--return 0
 end
