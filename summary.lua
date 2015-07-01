@@ -34,17 +34,18 @@ function summary(a, type)
 	print ("mean : " , mean , ", sd : " , sd)
 	
 	print (type)
-	if type == "1" then a:assign(0 , sum) end
-	if type == "2" then a:assign(0 , count) end
-	if type == "3" then a:assign(0 , max) end
-	if type == "4" then a:assign(0 , min) end
-	if type == "5" then a:assign(0 , mean) end
-	if type == "6" then a:assign(0 , sd) end
-	if type == "sum" then a:assign(0 , sum) end
-	if type == "count" then a:assign(0 , count) end
-	if type == "max" then a:assign(0 , max) end
-	if type == "min" then a:assign(0 , min) end
-	if type == "mean" then a:assign(0 , mean) end
-	if type == "sd" then a:assign(0 , sd) end
-	return true
+	 if type == "1" then a:assign(0 , sum) end
+        if type == "2" then a:assign(0 , count) end
+        if type == "3" then a:assign(0 , max) end
+        if type == "4" then a:assign(0 , min) end
+        if type == "5" then a:assign(0 , mean) end
+        if type == "6" then a:assign(0 , sd) end
+        type_str = type:sub(2,-2)
+        if type_str == "sum" then a:assign(0 , sum) end
+        if type_str == "count" then a:assign(0 , count) end
+        if type_str == "max" then a:assign(0 , max) end
+        if type_str == "min" then a:assign(0 , min) end
+        if type_str == "mean" then a:assign(0 , mean) end
+        if type_str == "sd" then a:assign(0 , sd) end
+        return true
 end
