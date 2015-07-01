@@ -40,11 +40,11 @@ function summary(a, type)
 	if type == "4" then a:assign(0 , min) end
 	if type == "5" then a:assign(0 , mean) end
 	if type == "6" then a:assign(0 , sd) end
-	if type == "\"sum\"" then a:assign(0 , sum) end
-	if type == "\"count\"" then a:assign(0 , count) end
-	if type == "\"max\"" then a:assign(0 , max) end
-	if type == "\"min\"" then a:assign(0 , min) end
-	if type == "\"mean\"" then a:assign(0 , mean) end
-	if type == "\"sd\"" then a:assign(0 , sd) end
+	if type == "sum" then a:assign(0 , sum) end
+	if type == "count" then a:assign(0 , count) end
+	if type == "max" then a:assign(0 , max) end
+	if type == "min" then a:assign(0 , min) end
+	if type == "mean" then a:assign(0 , mean) end
+	if type == "sd" then a:assign(0 , sd) end
 	return true
 end
