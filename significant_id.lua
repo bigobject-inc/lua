@@ -75,7 +75,7 @@ end
 function significant_id(a)
 	val = a:getChildrenValue(1);
 	id,value = cdfmin_id(val)
-	id_array = a:getChildrenId(1);
+	id_array = a:getChildrenId();
 	a:assign(0 , id_array[id])
 	--print ("cdfmin_id : " , id , " : " , value)
 	return true
