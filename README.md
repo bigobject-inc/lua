@@ -4,7 +4,7 @@ public lua functions for BigObject
 Please refer http://bigobject.readme.io/ for detail
 
 
-##copy a lua script to bigobject docker image
+##Copy a lua script to bigobject docker image
 
     sh cpLua2BO.sh <lua script file> <docker image name (option)>
 
