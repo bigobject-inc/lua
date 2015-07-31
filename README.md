@@ -16,3 +16,5 @@ copy put.lua into the docker image "bigobject"
 copy put.lua into the docker image "bigobject_dev" 
 
     sh cpLua2BO.sh put.lua bigobject_dev
+
+Note: if you use mac machine, you may be remove the "sudo" word in the cpLua2BO.sh script
