@@ -6,7 +6,7 @@ Please refer http://bigobject.readme.io/ for detail
 
 ##Copy a lua script to bigobject docker image
 
-    sh cpLua2BO.sh <lua script file> <docker image name (option)>
+    sh cpLua2BO.sh <lua script file> <docker container image name (option)>
 
 ex. 
 copy put.lua into the docker image "bigobject" 
