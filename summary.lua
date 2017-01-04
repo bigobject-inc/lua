@@ -1,4 +1,8 @@
 function summary(a, type)
+	type_str = type:sub(2,-2)
+	if type ~= "1" and type ~= "2" and type ~= "3"  and type ~= "4" and type ~= "5"  and type ~= "6"  and type_str ~= "sum"  and type_str ~= "count"  and type_str ~= "max"  and type_str ~= "min"  and type_str ~= "mean"  and type_str ~= "sd"  then
+		error("unknown summary type : " .. type )
+	end
 	print (type)
 	data_array = a:getChildrenValue(1);
 	
