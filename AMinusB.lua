@@ -4,10 +4,10 @@ function AMinusB(a , attr_a , attr_b)
 	b_v = 0
 	for id,v in pairs(sv) do
 		--print (id , v)
-		if id == attr_a:sub(2,-2) then
+		if id == attr_a then
 			a_v = v
 		end
-		if id == attr_b:sub(2,-2) then
+		if id == attr_b then
 			b_v = v
 		end	
 	end
